@@ -53,7 +53,7 @@ def run(playwright: Playwright) -> None:
         page.get_by_role("combobox").filter(has_text="Select Shift").click()
         page.get_by_label("Morning").get_by_text("Morning").click()
         page.get_by_role("combobox").filter(has_text="Select Section").click()
-        page.get_by_role("option", name="Section A").click()
+        page.get_by_role("option", name="Section B").click()
         page.get_by_role("button", name="Save").click()
 
         page.wait_for_timeout(1000)  # Wait 1 second before next entry
